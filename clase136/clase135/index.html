@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de agregar fila con jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+        /* Estilos para mejorar la apariencia */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        #formulario {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #textoInput {
+            width: 60%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        #botonGuardar {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #botonGuardar:hover {
+            background-color: #45a049;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo de agregar fila con jQuery</h2>
+    <div id="formulario">
+        <input type="text" id="textoInput" placeholder="Escribe algo...">
+        <button id="botonGuardar">Guardar</button>
+    </div>
+    <table id="tablaDatos">
+        <thead>
+            <tr>
+                <th>Texto Guardado</th>
+                <th>Fecha y Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas agregadas dinámicamente aparecerán aquí -->
+        </tbody>
+    </table>
+</body>
+</html>
